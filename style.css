@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1260px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+li {
+    margin: 0 20px;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+li a:hover {
+    color: red;
+    text-decoration: underline;
+    text-decoration-line: overline;
+}
+
+.copyright {
+    text-align: center;
+    background: grey;
+    padding: 40px 0;
+
+}
+
+.history--content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.history--left {
+    width: 400px;
+    margin-left: 100px;
+
+}
+
+.history--right {
+    margin-right: 100px;
+}
+
+.cta {
+    background: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cta:hover {
+    background: grey;
+}
+
+.cta:active {
+    background: green;
+}
+
+h1 {
+    font-size: 120px;
+}
+
+h3 {
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.hero--content {
+    width: 700px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 50px;
+    padding-right: 0;
+
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+h4 {
+    font-size: 30px;
+    margin-bottom: 20px
+}
+
+p {
+    font-size: 18px;
+    line-height:  24px;
+    margin-bottom: 40px;
+}
+
+.history {
+    margin: 80px 0;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hero {
+    background: turquoise;
+}
+
+
+/* tablet media query */
+
+@media only screen and (max-width: 760px) {
+    .wrapper {
+        border: 1px solid black;
+        background-color: pink;
+        max-width: 680px;
+    }
+    h1 {
+        font-size: 80px;
+    }    
+    h3 {
+        font-size: 30px;
+    }
+    .cta {
+        padding: 20px 44px;
+        border-radius: 35px;
+        font-size: 14px;
+
+       
+    }
+}
+
+
+
+/* mobile media query */
+
+@media only screen and (max-width: 374px) {
+    .wrapper {
+        border: 1px solid black;
+        background-color: greenyellow;
+        max-width: 340px;
+    }   
+    h1 {
+        font-size: 60px;
+    }    
+    h3 {
+        font-size: 20px;
+    }
+    .cta {
+        padding: 16px 38px;
+        border-radius: 30px;
+        font-size: 14px;
+
+       
+    } 
+}
